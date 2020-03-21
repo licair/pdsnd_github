@@ -165,6 +165,7 @@ def user_stats(df):
     print('-'*40)
 
 def display_data(df):
+    """Prompts user to see raw data"""
     ans = input("Do you want to see raw data? Type y for yes otherwise just hit enter to skip: ").lower()
     i=0
     while ans == 'y':
