@@ -131,6 +131,10 @@ def trip_duration_stats(df):
     avg_dur = df['Trip Duration'].mean()
     print("Average travel time: {}".format(avg_dur))
 
+    # display max travel time
+    max_dur = df['Trip Duration'].max()
+    print("Max travel time: {}".format(max_dur))
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -170,6 +174,7 @@ def display_data(df):
     i=0
     while ans == 'y':
         if i+5<= df.size:
+            print("Number of lines unviewed so far:",df.size-(i+4))
             print("Displaying lines {} to {}:".format(i,i+4))
             print(df.iloc[i:i+5,:])
             ans = input("Do you want to see 5 more lines. Type y for yes otherwise just hit enter to skip: ").lower()
