@@ -169,6 +169,7 @@ def display_data(df):
     i=0
     while ans == 'y':
         if i+5<= df.size:
+            print("Number of lines unviewed so far:",df.size-(i+4))
             print("Displaying lines {} to {}:".format(i,i+4))
             print(df.iloc[i:i+5,:])
             ans = input("Do you want to see 5 more lines. Type y for yes otherwise just hit enter to skip: ").lower()
