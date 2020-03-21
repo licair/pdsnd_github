@@ -9,9 +9,9 @@ An interactive program that allows the user to learn about the bike share usage 
 The user is also able to view the rows of the csv file.
 
 ### Files used
-chicago.csv
-new_york_city.csv
-washington.csv
+chicago.csv,
+new_york_city.csv,
+washington.csv,
 bikeshare.py 
 
 ### Credits
